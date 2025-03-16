@@ -1,0 +1,5 @@
+len = 5;
+nC = 3;
+maxCons = 8;
+
+cons = [2,1,3];

@@ -1,0 +1,10 @@
+% Data file
+m = 4;
+n = 3;
+s = 10;
+disp = [2, 1, 1, 2];
+Tipo = {Tipo1,Tipo2,Tipo3};
+jtipo = [Tipo1,Tipo1,Tipo2,Tipo3];
+jsat = [| 8, 9, 3, 1
+        | 6, 4, 5, 3
+        | 2, 2, 9, 9 |]

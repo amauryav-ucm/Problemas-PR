@@ -1,0 +1,22 @@
+D = 5;
+T = 12;
+N1 = 3;
+N2 = 3;
+N3 = 4;
+MaxDT = 5;
+MaxDL = 1;
+MinDT = 3;
+A = 1;
+afines = [|false,false,true,false,true,false,false,false,true,false,false,false
+          |false,false,true,true,true,true,true,false,false,false,false,false
+          |true,true,false,false,false,false,false,true,true,true,true,true
+          |false,true,false,false,true,false,true,false,true,false,true,false
+          |true,true,false,true,false,false,false,true,true,false,false,true
+          |false,true,false,false,false,false,true,true,false,false,true,true
+          |false,true,false,true,false,true,false,false,true,true,false,false
+          |false,false,true,false,true,true,false,false,false,false,false,false
+          |true,false,true,true,true,false,true,false,false,true,true,true
+          |false,false,true,false,false,false,true,false,true,false,false,true
+          |false,false,true,true,false,true,false,false,true,false,false,false
+          |false,false,true,false,true,true,false,false,true,true,false,false|];
+R = {1,4,7,10};

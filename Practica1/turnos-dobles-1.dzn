@@ -1,0 +1,35 @@
+% SAT
+
+% Number of days to cover
+D = 3;
+% Number of workers
+T = 6;
+% Number of workers for shift 1
+N1 = 1;
+% Number of workers for shift 2
+N2 = 1;
+% Number of workers for shift 3
+N3 = 1;
+% Max number of days a worker can work in a row
+MaxDT = 3;
+% Max number of free days a worker can have in a row
+MaxDL = 3;
+% Minimum number of days a worker must work in the D days
+MinDT = 0;
+% Minimum number of favored workers a worker must have along in their shift
+A = 0;
+% Matrix indicating if a worker favors another
+afines = [|false,true,false,false,true,false
+          |true,false,false,true,false,false
+          |false,false,false,true,false,true
+          |false,true,true,false,false,false
+          |true,false,false,false,false,true
+          |false,false,true,false,true,false|];
+% List of expert workers, there must be at least one in every shift
+R = {1,2,3,4,5,6};
+
+turnosDobles = 
+[| 1, 0, 1, 1, 0, 1
+ | 0, 1, 0, 1, 0, 1
+ | 0, 0, 0, 0, 0, 0
+ |];

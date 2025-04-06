@@ -1,0 +1,47 @@
+% Number of days to cover
+D = 7;
+% Number of workers
+T = 15;
+% Number of workers for shift 1
+N1 = 3;
+% Number of workers for shift 2
+N2 = 4;
+% Number of workers for shift 3
+N3 = 5;
+% Max number of days a worker can work in a row
+MaxDT = 7;
+% Max number of free days a worker can have in a row
+MaxDL = 2;
+% Minimum number of days a worker must work in the D days
+MinDT = 3;
+% Minimum number of favored workers a worker must have along in his shift
+A = 2;
+% Matrix indicating if a worker favors another
+afines = [|false,true,true,false,false,false,true,false,false,false,false,false,false,true,false
+          |true,false,true,false,true,false,false,true,false,false,false,false,false,false,false
+          |true,true,false,true,false,false,true,false,true,false,false,false,true,false,true
+          |false,false,true,false,false,true,false,true,true,false,false,false,false,true,false
+          |false,true,false,false,false,true,false,false,false,true,true,false,false,false,true
+          |false,false,false,true,true,false,false,false,true,false,false,true,false,true,false
+          |true,false,true,false,false,false,false,false,true,false,true,false,false,false,true
+          |false,true,false,true,false,false,false,false,false,true,false,false,false,true,false
+          |false,false,true,true,false,true,true,false,false,true,true,false,false,false,false
+          |false,false,false,false,true,false,false,true,true,false,false,true,true,false,true
+          |false,false,false,false,true,false,true,false,true,false,false,false,false,true,false
+          |false,false,false,false,false,true,false,false,false,true,false,false,true,false,true
+          |false,false,true,false,false,false,false,false,false,true,true,true,false,true,false
+          |true,false,false,true,false,true,false,true,false,false,true,false,true,false,false
+          |false,false,true,false,true,false,true,false,false,true,false,true,false,false,false|];
+% List of expert workers, there must be at least one in every shift
+R = {2,5,8,11,14};
+
+turnoDesfavorecido = 
+[| 3, 2, 2, 0, 1, 1, 3, 2, 3, 0, 1, 3, 2, 2, 1
+ | 3, 3, 2, 3, 3, 3, 1, 1, 1, 3, 1, 1, 3, 0, 2
+ | 2, 2, 3, 0, 2, 1, 2, 1, 1, 3, 1, 0, 0, 2, 3
+ | 0, 3, 3, 2, 1, 3, 3, 1, 3, 1, 3, 2, 2, 1, 0
+ | 2, 3, 0, 3, 1, 2, 3, 3, 2, 1, 3, 0, 2, 3, 2
+ | 2, 3, 3, 1, 2, 3, 3, 3, 1, 3, 1, 2, 3, 1, 3
+ | 0, 2, 3, 1, 2, 2, 0, 0, 2, 3, 1, 2, 2, 1, 3
+ |];
+
